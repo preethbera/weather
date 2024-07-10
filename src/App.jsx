@@ -7,7 +7,6 @@ import HoursSection from "./HoursSection/HoursSection";
 import DayWiseForecast from "./DayWiseForecast/DayWiseForecast";
 
 function App() {
-  const API_KEY = "8afe00cded3e3fde2d132e97e0653f0f";
   let [location, setLocation] = useState({ city: "Surat" });
   const [weatherData, setWeatherData] = useState(null);
   let [showError, setShowError] = useState(false);
@@ -18,7 +17,9 @@ function App() {
   }
 
   const fetchLocationOnSearch = async (city) => {
-    const locURL2 = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`;
+    const locURL2 = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${
+      import.meta.env.VITE_API_ID
+    }`;
     try {
       const locResponse2 = await fetch(locURL2);
       const locData2 = await locResponse2.json();
@@ -43,7 +44,9 @@ function App() {
       try {
         const ipResponse = await fetch(ipURL);
         const ipData = await ipResponse.json();
-        const LocURL = `https://ipinfo.io/${ipData.ip}?token=4cc4e6523959c6`;
+        const LocURL = `https://ipinfo.io/${ipData.ip}?token=${
+          import.meta.env.VITE_API_IP_ID
+        }`;
         const locResponse = await fetch(LocURL);
         const locData = await locResponse.json();
         setLocation(locData);
@@ -58,7 +61,9 @@ function App() {
   useEffect(() => {
     const fetchWeatherData = async (city) => {
       try {
-        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`;
+        const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${
+          import.meta.env.VITE_API_ID
+        }`;
         const response = await fetch(URL);
         const data = await response.json();
         if (data.cod == 200) {
@@ -95,7 +100,9 @@ function App() {
 
   useEffect(() => {
     const fetchForecast = async (city) => {
-      let forecastData_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}&units=metric`;
+      let forecastData_URL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${
+        import.meta.env.VITE_API_ID
+      }&units=metric`;
       try {
         const forecastDataResponse = await fetch(forecastData_URL);
         const forecastDataTemp = await forecastDataResponse.json();
