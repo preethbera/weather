@@ -1,11 +1,6 @@
 import styles from "./hourssection.module.css";
 import HoursInfo from "./HourInfo";
 
-//   time: data.list[i].dt_txt,
-//   temp: Math.round(Number(data.list[i].main.temp)),
-//   icon: data.list[i].weather[0].icon,
-//   pop: 100 * Number(data.list[i].pop),
-
 function HoursSection({ data }) {
   let hourlyForecast = [];
   for (let i = 0; i < 8; i++) {
