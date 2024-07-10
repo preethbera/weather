@@ -1,0 +1,54 @@
+.backgroundcont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.close{
+    display: none;
+}
+.errorcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(91, 156, 230);
+    border-radius: 1em;
+    min-width: 250px;
+}
+.buttoncont{
+    width: 100%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em 0em 2em;
+    gap: 3rem;
+}
+.buttoncont span{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.buttoncont button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.buttoncont svg{
+    width: 2rem;
+    height: 2rem;
+    fill: black;
+}
+.errormessage{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(142, 23, 23);
+    padding: 0.5em 2em 1em 1em;
+}

@@ -1,0 +1,9 @@
+.maincont{
+    border-bottom: 2px solid rgb(178, 178, 178);
+}
+.parametercont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,23 @@
+.cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid purple; */
+    gap: 0.3em;
+    padding: 1rem;
+    min-width: 8.5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.cont img{
+    width: 2.5rem;
+}
+.paraname{
+    color: rgb(68, 68, 68);
+    font-size: 1.1rem;
+}
+.paravalue{
+    font-size: 1.3rem;
+    font-weight: 700;
+    white-space: nowrap;
+}

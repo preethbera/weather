@@ -1,0 +1,44 @@
+.secHeading{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0.5em 1.7rem 0em 1.5rem;
+}
+
+/* -----------------hour info css------------------------------ */
+.maincont{
+    /* border: 2px solid saddlebrown; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgb(180, 180, 180);
+    gap: 2rem;
+    padding: 0.2em 1.7em 0.2em 1.7em;
+}
+
+.maincont img{
+    width: 5rem;
+}
+
+.temp{
+    display: inline-block;
+    font-size: 1.4rem;
+    font-weight: 600;
+    white-space: nowrap;
+    min-width: 5ch;
+}
+.date{
+    display: inline-block;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(71, 71, 71);
+    white-space: nowrap;
+    min-width: 10ch;
+}
+.pop{
+    font-size: 1.3rem;
+    font-weight: 500;
+    white-space: nowrap;
+    min-width: 5ch;
+    text-align: right;
+}

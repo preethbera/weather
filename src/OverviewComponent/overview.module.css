@@ -1,0 +1,94 @@
+.sunnyweather{
+    background-image: url("../assets/sunnyweather.png");
+    background-size: cover;
+}
+.clearnight{
+    background-image: url("../assets/clear-night-sky.webp");
+    background-size: cover;
+}
+.rainy{
+    background-image: url("../assets/rainy.webp");
+    background-size: cover;
+}
+.thunder{
+    background-image: url("../assets/thunderstorm.jpg");
+    background-size: cover;
+}
+.cloudy{
+    background-image: url("../assets/cloudy.jpg");
+    background-size: cover;
+}
+.snowfall{
+    background-image: url("../assets/snowfall.jpg");
+    background-size: cover;
+}
+.mist{
+    background-image: url("../assets/mist.jpg");
+    background-size: cover;
+}
+.cloudynight{
+    background-image: url("../assets/cloudynight.jpg");
+    background-size: cover;
+}
+.maincont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.toppart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em 0.6em 1.2em;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.4);
+}
+.location{
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+}
+.time{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+.imgcont img{
+    height: 12rem;
+}
+.bottompart{
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 2em 0em 2em;
+}
+.leftcont{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+}
+.temperature{
+    font-size: 4.3rem;
+    font-weight: 800;
+    white-space: nowrap;
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.3rem black;
+}
+.weather{
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0.15rem 0.15rem 0.15rem black;
+}
+.date{
+    font-size: 1.3rem;
+    color: white;
+    text-shadow: 0.15rem 0.15rem 0.15rem black;
+}
+.imgcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
