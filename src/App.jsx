@@ -144,7 +144,7 @@ function App() {
         <Error handleErrorMessage={handleErrorMessage}>{errorMessage}</Error>
       )}
       {forecastData && <HoursSection data={forecastData}></HoursSection>}
-      {forecastData && <DayWiseForecast data={forecastData}></DayWiseForecast>}
+      {/* {forecastData && <DayWiseForecast data={forecastData}></DayWiseForecast>} */}
     </>
   );
 }
